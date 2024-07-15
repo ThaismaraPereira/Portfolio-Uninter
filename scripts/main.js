@@ -37,7 +37,7 @@ document.addEventListener("DOMContentLoaded", () => {
         );
       })
       .finally(() => {
-        form.classList.remove("enviando"); // Removendo a classe de animação após o envio
+        form.classList.remove("enviando");
       });
   }
 
@@ -48,10 +48,9 @@ document.addEventListener("DOMContentLoaded", () => {
 
     document.body.appendChild(alerta);
 
-    // Remover o alerta após alguns segundos
     setTimeout(() => {
       alerta.remove();
-    }, 5000); // 5000 milissegundos = 5 segundos (ajuste conforme desejado)
+    }, 5000);
   }
 
   const descriptionDiv = document.getElementById("principal-skills-descricao");
