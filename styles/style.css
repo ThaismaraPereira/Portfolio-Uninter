@@ -540,6 +540,16 @@ main {
   color: #ff9d2e;
 }
 
+#container-principal-sobre-mim {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  padding: 1em;
+  border-radius: 1em;
+  margin: 1em 0;
+  background-color: #fefefe;
+}
+
 @keyframes animacaoBarraHabilidade {
   0% {
     width: 0;
