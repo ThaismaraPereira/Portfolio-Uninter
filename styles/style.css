@@ -25,22 +25,43 @@ body {
 
 #menu-lateral ul {
   display: flex;
+  height: 90%;
+  width: 80%;
   flex-direction: column;
   margin: 0;
   padding: 0;
+  justify-content: center;
+  align-items: center;
 }
 
 #menu-lateral ul li {
   display: flex;
+  width: 100%;
+  flex-wrap: wrap;
+  flex: content;
+  padding: 2em 0;
   align-items: center;
+  justify-content: center;
   list-style: none;
 }
 
 #menu-lateral ul li a {
   display: flex;
+  flex-direction: column;
   align-items: center;
   text-decoration: none;
   color: black;
+  cursor: pointer;
+  transition: 0.7s;
+}
+
+#menu-lateral ul li a:hover {
+  color: #ff9d2e;
+}
+
+#menu-lateral ul li a i {
+  margin-bottom: 0.5em;
+  font-size: x-large;
 }
 
 main {
@@ -290,8 +311,8 @@ main {
 
 #container-resumo-curriculo object {
   width: 100%;
-  height: 17em;
-  object-fit: contain;
+  height: 16.75em;
+  object-fit: fill;
 }
 
 #container-resumo-curriculo a {
