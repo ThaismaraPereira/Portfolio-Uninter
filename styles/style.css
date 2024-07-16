@@ -495,7 +495,9 @@ main {
   background-color: #f0f0f0;
 }
 
-#container-principal-projetos {
+#container-principal-projetos,
+#container-principal-certificacoes,
+#container-principal-sobre-mim {
   width: 100%;
   display: flex;
   flex-direction: column;
@@ -505,18 +507,26 @@ main {
   background-color: #fefefe;
 }
 
-#container-principal-projetos h2 {
+#principal-sobre-mim {
+  margin: 0 1em;
+}
+
+#container-principal-projetos h2,
+#container-principal-certificacoes h2,
+#container-principal-sobre-mim h2 {
   margin: 1em;
 }
 
-#principal-projetos {
+#principal-projetos,
+#principal-certificacoes {
   width: 100%;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
 }
 
-.project-box {
+.project-box,
+.certificate-box {
   width: 25%;
   margin-inline: 1em;
   margin-bottom: 1em;
@@ -534,7 +544,8 @@ main {
   position: relative;
 }
 
-.project-box a {
+.project-box a,
+.certificate-box a {
   background-color: #ffbb6e;
   margin-top: 1em;
   padding: 0.5em 1.8em;
@@ -547,28 +558,21 @@ main {
   width: 65%;
 }
 
-.project-box a:hover {
+.project-box a:hover,
+.certificate-box a:hover {
   background-color: #ff9d2e;
 }
 
-.project-box p {
+.project-box p,
+.certificate-box p {
   font-size: small;
   text-align: justify;
 }
 
-.project-box h4 {
+.project-box h4,
+.certificate-box h4 {
   text-align: center;
   color: #ff9d2e;
-}
-
-#container-principal-sobre-mim {
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-  padding: 1em;
-  border-radius: 1em;
-  margin: 1em 0;
-  background-color: #fefefe;
 }
 
 @keyframes animacaoBarraHabilidade {
