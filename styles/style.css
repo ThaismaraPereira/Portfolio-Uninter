@@ -8,6 +8,19 @@ body {
   background: #efdeba;
 }
 
+html ::-webkit-scrollbar {
+  width: 0.3em;
+}
+
+html ::-webkit-scrollbar-thumb {
+  border-radius: 5em;
+  background: #fefefe;
+}
+
+html ::-webkit-scrollbar-track {
+  background: #efdeba;
+}
+
 #menu-lateral {
   display: flex;
   flex-direction: column;
@@ -65,7 +78,7 @@ body {
 }
 
 main {
-  width: 91%;
+  width: calc(100% - 8% - 3em);
   min-height: calc(100% - 2em); /*Altura total - padding*/
   display: flex;
   justify-content: space-evenly;
@@ -73,7 +86,7 @@ main {
 }
 
 #principal {
-  width: 70%;
+  width: 75%;
 }
 
 #principal-home {
@@ -141,8 +154,8 @@ main {
 }
 
 #resumo-imagem {
-  width: auto;
-  height: 10em;
+  height: auto;
+  width: 10em;
   margin-top: 0.5em;
   border-radius: 50%;
   border: rgba(239, 193, 129, 1) 2px solid;
@@ -224,6 +237,11 @@ main {
 #container-resumo-idiomas h3,
 #container-resumo-skills h3 {
   margin: 0.5em 0;
+}
+
+#container-resumo-skills a {
+  color: #ff9d2e;
+  font-size: 1em;
 }
 
 #lista-resumo-idiomas,
@@ -581,5 +599,11 @@ main {
   }
 
   100% {
+  }
+}
+
+@media (max-width: 940px) {
+  .detalhes-habilidade h5:last-child {
+    display: none;
   }
 }
